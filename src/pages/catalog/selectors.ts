@@ -1,5 +1,5 @@
 import { createSelector } from 'reselect';
-import { IRootStore } from "../../types";
+import { IRootStore } from "@/types";
 
 
 const catalogState = (state: IRootStore) => state.catalog;

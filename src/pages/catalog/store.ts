@@ -1,12 +1,11 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { ICatalogElement, ICatalogStore } from "./types";
-import { mockCatalog } from "./__mocks__/store";
+import { ICatalogElement, ICatalogStore } from "@/pages/catalog/types";
 
 
 const storeName = "catalog";
 
 const initialState: ICatalogStore = {
-  catalog: mockCatalog,
+  catalog: [],
 }
 
 export const catalogSlice = createSlice({
