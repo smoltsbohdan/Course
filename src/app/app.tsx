@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import { BrowserRouter, Route, Routes, } from "react-router-dom";
-import Catalog from "../pages/catalog/catalog";
+import CatalogPage from "../pages/catalog/catalog";
+import SongPage from "../pages/song/song";
 import Header from "../components/header/header.component";
 
 
@@ -10,7 +11,8 @@ const App: FC = (): JSX.Element => {
       <Header/>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Catalog/>}/>
+          <Route path="/" element={<CatalogPage/>}/>
+          <Route path="/song" element={<SongPage/>}/>
         </Routes>
       </BrowserRouter>
     </>

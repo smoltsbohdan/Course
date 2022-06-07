@@ -10,7 +10,7 @@ export interface ICatalogElement {
   thumbnail: string;
   author: string;
   name: string;
-  year: string | number;
-  duration: string | number;
+  year: number;
+  duration: string;
   genre: GenresMusic;
 }
