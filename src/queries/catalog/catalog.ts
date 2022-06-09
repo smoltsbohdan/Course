@@ -12,6 +12,25 @@ export const songsQuery = gql`
             year
             duration
             genre
+            videoURL
+            lyrics
         }
     }
-`
+`;
+
+export const songByIdQuery = gql`
+    query Catalog($id: ID!) {
+        song(id: $id) {
+            id
+            album
+            thumbnail
+            author
+            name
+            year
+            duration
+            genre
+            videoURL
+            lyrics
+        }
+    }
+`;

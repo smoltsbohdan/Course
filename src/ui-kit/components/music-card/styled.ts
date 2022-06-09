@@ -11,6 +11,7 @@ export const MusicCardWrapper = styled.div` && {
   background: #FFFFFF;
   transition: 0.2s;
   position: relative;
+  cursor: pointer;
 
   :hover {
     transform: translateY(-10px);

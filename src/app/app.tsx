@@ -12,7 +12,7 @@ const App: FC = (): JSX.Element => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<CatalogPage/>}/>
-          <Route path="/song" element={<SongPage/>}/>
+          <Route path="/song:id" element={<SongPage/>}/>
         </Routes>
       </BrowserRouter>
     </>

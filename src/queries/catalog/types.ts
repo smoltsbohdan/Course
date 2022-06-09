@@ -1,6 +1,10 @@
 import { ICatalogElement } from "@/pages/catalog/types";
 
 
-export interface IMusicQueryResponseModel {
+export interface ISongsQueryResponseModel {
   songs: ICatalogElement[];
+}
+
+export interface ISongByIdQueryResponseModel {
+  song: ICatalogElement;
 }

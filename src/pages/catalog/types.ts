@@ -6,6 +6,7 @@ export interface ICatalogStore {
 }
 
 export interface ICatalogElement {
+  id: string;
   album: string;
   thumbnail: string;
   author: string;
@@ -13,4 +14,6 @@ export interface ICatalogElement {
   year: number;
   duration: string;
   genre: GenresMusic;
+  videoURL: string;
+  lyrics: string;
 }
